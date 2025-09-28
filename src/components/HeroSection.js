@@ -1,6 +1,7 @@
 import React from 'react';
 import ReleaseCard from './ReleaseCard';
 import './HeroSection.css';
+import { heroBackground } from '../assets';
 
 const HeroSection = ({ release }) => {
   if (!release) {
@@ -17,7 +18,7 @@ const HeroSection = ({ release }) => {
         </div>
         <div className="hero-background">
           <img 
-            src="/hero-background.jpg" 
+            src={heroBackground} 
             alt="Cosmic Ocean"
             className="hero-bg-image"
           />
@@ -39,7 +40,7 @@ const HeroSection = ({ release }) => {
         </div>
         <div className="hero-background">
           <img 
-            src={release.albumArt || "/hero-background.jpg"} 
+            src={release.albumArt || heroBackground} 
             alt={release.albumArt ? release.title : "Cosmic Ocean"}
             className="hero-bg-image"
           />
