@@ -10,7 +10,16 @@ src/assets/
 │   ├── logos/          # Brand logos and logo variations
 │   ├── backgrounds/    # Hero backgrounds and page backgrounds
 │   ├── icons/          # UI icons and small graphics
+│   ├── album-art/      # Album covers and artwork
+│   ├── photos/         # Artist photos and promotional images
+│   ├── graphics/       # Custom graphics and illustrations
+│   ├── ui-elements/    # User interface elements
+│   ├── social-media/   # Social media assets and banners
 │   └── index.js        # Export all images
+├── fonts/             # Custom fonts and typography
+├── audio/             # Audio files for web use
+├── videos/            # Video files and background videos
+├── documents/         # PDFs and downloadable documents
 ├── index.js           # Main assets export file
 └── README.md          # This file
 ```
@@ -33,6 +42,15 @@ import { logo } from '../assets/images';
    - Logos: `images/logos/`
    - Backgrounds: `images/backgrounds/`
    - Icons: `images/icons/`
+   - Album Art: `images/album-art/`
+   - Photos: `images/photos/`
+   - Graphics: `images/graphics/`
+   - UI Elements: `images/ui-elements/`
+   - Social Media: `images/social-media/`
+   - Fonts: `fonts/`
+   - Audio: `audio/`
+   - Videos: `videos/`
+   - Documents: `documents/`
 
 2. **Export in index files:**
    - Add export to `images/index.js`
