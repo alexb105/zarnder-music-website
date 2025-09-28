@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
 }
 
 .hero-container {
@@ -77,8 +78,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.3;
-  filter: blur(2px);
+  opacity: 0.4;
+  filter: blur(1px);
+  transform: scale(1.05);
 }
 
 .hero-overlay {

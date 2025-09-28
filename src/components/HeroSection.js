@@ -15,6 +15,14 @@ const HeroSection = ({ release }) => {
             </p>
           </div>
         </div>
+        <div className="hero-background">
+          <img 
+            src="/hero-background.jpg" 
+            alt="Cosmic Ocean"
+            className="hero-bg-image"
+          />
+          <div className="hero-overlay"></div>
+        </div>
       </section>
     );
   }
@@ -30,13 +38,11 @@ const HeroSection = ({ release }) => {
           </div>
         </div>
         <div className="hero-background">
-          {release.albumArt && (
-            <img 
-              src={release.albumArt} 
-              alt={release.title}
-              className="hero-bg-image"
-            />
-          )}
+          <img 
+            src={release.albumArt || "/hero-background.jpg"} 
+            alt={release.albumArt ? release.title : "Cosmic Ocean"}
+            className="hero-bg-image"
+          />
           <div className="hero-overlay"></div>
         </div>
       </div>

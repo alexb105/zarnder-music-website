@@ -17,16 +17,28 @@
 }
 
 .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-logo-image {
+  height: 40px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+.nav-logo-text {
   font-size: 2rem;
   font-weight: bold;
   color: #fff;
-  text-decoration: none;
   letter-spacing: 2px;
   background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  transition: all 0.3s ease;
 }
 
 .nav-logo:hover {
@@ -75,7 +87,11 @@
     padding: 0 1rem;
   }
   
-  .nav-logo {
+  .nav-logo-image {
+    height: 32px;
+  }
+  
+  .nav-logo-text {
     font-size: 1.5rem;
   }
   
