@@ -5,12 +5,12 @@ import { getAuth } from 'firebase/auth';
 
 // Your Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCzGLvfsvtmo5vRmImp9wjHBoJU3tXu2NQ",
-  authDomain: "zarnder-music-website.firebaseapp.com",
-  projectId: "zarnder-music-website",
-  storageBucket: "zarnder-music-website.firebasestorage.app",
-  messagingSenderId: "117116149833",
-  appId: "1:117116149833:web:d3ce55f1c4cefc19eddf98"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
